@@ -1,0 +1,6 @@
+//define('DB_USERNAME', 'orderhero');
+//define('DB_PASSWORD', 'deallab12!');
+//define('DB_HOST', 'localhost');
+//define('DB_NAME', 'orderhero');
+
+# http://orderhero.co.kr

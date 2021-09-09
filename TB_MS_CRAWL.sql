@@ -1,0 +1,40 @@
+-- phpMyAdmin SQL Dump
+-- version 4.0.10.20
+-- https://www.phpmyadmin.net
+--
+-- 호스트: localhost
+-- 처리한 시간: 20-07-08 11:08
+-- 서버 버전: 5.1.45-log
+-- PHP 버전: 5.5.17p1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- 데이터베이스: `orderhero`
+--
+
+-- --------------------------------------------------------
+
+--
+-- 테이블 구조 `TB_MS_CRAWL`
+--
+
+CREATE TABLE IF NOT EXISTS `TB_MS_CRAWL` (
+  `PROD_CD` varchar(10) NOT NULL,
+  `SELLER_ID` varchar(100) NOT NULL,
+  `SELLER_CD` int(11) NOT NULL,
+  `USE_YN` varchar(2) NOT NULL DEFAULT 'Y',
+  `REG_DATE` date NOT NULL,
+  PRIMARY KEY (`PROD_CD`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
